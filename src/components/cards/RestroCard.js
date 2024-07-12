@@ -1,15 +1,17 @@
+import {IMAGE_SOURCE_URL} from '../../utils/constant';
+
 const RestroCard=({name,imageId,cuisines,avgRatingString,costForTwo,sla})=>{
     return (
         <div className="restro-card" style={{backgroundColor:"#f0f0f0"}}>
             <div className="restro-img">
-                <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+imageId}></img>
+                <img src={IMAGE_SOURCE_URL+imageId}></img>
             </div>
             <div className="restro-details">
                 <h3>{name}</h3>
-                <h4>{cuisines.join(",")}</h4>
-                <h4>{avgRatingString}</h4>
-                <h4>{costForTwo}</h4>
-                <h4>{sla.deliveryTime} minutes</h4>
+                <h5>{cuisines.join(",")}</h5>
+                <h5>{avgRatingString}</h5>
+                <h5>{costForTwo}</h5>
+                <h5>{sla.deliveryTime} minutes</h5>
             </div>
 
         </div>
