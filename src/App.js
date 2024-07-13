@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
         <Header></Header>
-        <SearchComp></SearchComp> 
+        {/* <SearchComp></SearchComp>  */}
         <Body></Body>
     </div>
   );
